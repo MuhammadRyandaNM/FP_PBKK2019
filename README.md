@@ -1,5 +1,5 @@
 # FP - PBKK A 2019
-## Avagame
+## Avagames
 
 ## Anggota Kelompok
 ```
@@ -13,7 +13,7 @@ Nama : Abdurrahman
 NRP : 05111640000087
 ```
 ## Deskripsi Singkat
-Avagame adalah aplikasi penjualan game berbasis web dengan menggunakan framework spring  
+Avagames adalah aplikasi penjualan game berbasis web dengan menggunakan framework spring  
 ## Analisis sistem
 1. User Registration
 2. CRUD
