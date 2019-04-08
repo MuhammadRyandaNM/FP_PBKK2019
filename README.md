@@ -1,6 +1,6 @@
 # FP - PBKK A 2019
-## Nama Aplikasi
-### Avagame
+## Avagame
+
 ## Anggota Kelompok
 ```
 Nama : Muhammad Ryanda Nugraha M
