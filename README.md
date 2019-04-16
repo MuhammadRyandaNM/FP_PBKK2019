@@ -17,10 +17,15 @@ Avagames adalah aplikasi penjualan game berbasis web dengan menggunakan framewor
 ## Analisis sistem
 1. User Registration
 2. CRUD
-* User dapat menambahkan dan mengurangi game dalam keranjang
+* User dapat menambahkan game ke keranjang
+* User dapat menghapus game dari keranjang
+* User dapat menambahkan review
+* User dapat melihat detil game
+* User dapat melakukan konfirmasi pembelian
 * Admin dapat menambahkan game ke list game
 * Admin dapat mengubah detail game
 * Admin dapat menghapus game dari list game
+* Admin dapat menambah credits pengguna
 * TBD
 3. Security
 * Password User dan Admin terinkripsi saat masuk ke database
