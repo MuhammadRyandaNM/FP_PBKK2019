@@ -34,6 +34,20 @@ Avagames adalah aplikasi penjualan game berbasis web dengan menggunakan framewor
 * TBD
 5. TBD
 
+## Use Case
+![ss1](UCAvagames.jpeg)
+
+## Sitemap
+![ss1](Sitemap.png)
+
+## Desain Tampilan
+### Login
+![ss1](Login.PNG)
+### ListGame
+![ss1](ListGame.PNG)
+### DetailGame
+![ss1](DetailGame.PNG)
+
 
 
 
