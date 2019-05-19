@@ -13,11 +13,11 @@ public class Peminjaman {
 	@Column(name="id_peminjaman")
 	private int id_peminjaman;
 	
-	@Column(name="nrp")
-	private String nrp;
+	@Column(name="ID_user")
+	private String ID_user;
 	
-	@Column(name="isbn")
-	private String isbn;
+	@Column(name="ID_Game")
+	private String ID_Game;
 	
 	@Column(name="tgl_pinjam")
 	private String tgl_pinjam; 
@@ -31,42 +31,42 @@ public class Peminjaman {
 	@Column(name="denda")
 	private long denda;
 	
-	@Column(name="judul_buku")
-	private String judulbuku;
+	@Column(name="judul_game")
+	private String judulgame;
 	
 	public Peminjaman() {}
 
-	public Peminjaman(int id_peminjaman, String nrp, String isbn, String tgl_pinjam, String tgl_kembali,
-			String status_peminjaman, long denda, String judulbuku) {
+	public Peminjaman(int id_peminjaman, String ID_user, String ID_Game, String tgl_pinjam, String tgl_kembali,
+			String status_peminjaman, long denda, String judul_game) {
 		super();
 		this.id_peminjaman = id_peminjaman;
-		this.nrp = nrp;
-		this.isbn = isbn;
+		this.ID_user = ID_user;
+		this.ID_Game = ID_Game;
 		this.tgl_pinjam = tgl_pinjam;
 		this.tgl_kembali = tgl_kembali;
 		this.status_peminjaman = status_peminjaman;
 		this.denda = denda;
-		this.judulbuku = judulbuku;
+		this.judulgame = judul_game;
 	}
 
-	public String getJudulbuku() {
-		return judulbuku;
+	public String getJudulgame() {
+		return judulgame;
 	}
 
-	public void setJudulbuku(String judulbuku) {
-		this.judulbuku = judulbuku;
+	public void setJudulgame(String judulgame) {
+		this.judulgame = judulgame;
 	}
 
 	public int getId_peminjaman() {
 		return id_peminjaman;
 	}
 
-	public String getNrp() {
-		return nrp;
+	public String getID_user() {
+		return ID_user;
 	}
 
-	public void setNrp(String nrp) {
-		this.nrp = nrp;
+	public void setID_user(String ID_user) {
+		this.ID_user = ID_user;
 	}
 
 	public String getTgl_pinjam() {
@@ -93,12 +93,12 @@ public class Peminjaman {
 		this.status_peminjaman = status_peminjaman;
 	}
 
-	public String getIsbn() {
-		return isbn;
+	public String getID_Game() {
+		return ID_Game;
 	}
 
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
+	public void setID_Game(String ID_Game) {
+		this.ID_Game = ID_Game;
 	}
 
 	public long getDenda() {
@@ -115,9 +115,9 @@ public class Peminjaman {
 
 	@Override
 	public String toString() {
-		return "Peminjaman [id_peminjaman=" + id_peminjaman + ", nrp=" + nrp + ", isbn=" + isbn + ", tgl_pinjam="
+		return "Peminjaman [id_peminjaman=" + id_peminjaman + ", ID_user=" + ID_user + ", ID_Game=" + ID_Game + ", tgl_pinjam="
 				+ tgl_pinjam + ", tgl_kembali=" + tgl_kembali + ", status_peminjaman=" + status_peminjaman + ", denda="
-				+ denda + ", judulbuku=" + judulbuku + "]";
+				+ denda + ", judulgame=" + judulgame + "]";
 	}
 	
 	

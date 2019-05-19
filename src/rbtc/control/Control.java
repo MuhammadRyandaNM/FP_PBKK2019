@@ -1,7 +1,7 @@
 package rbtc.control;
 
-import rbtc.dao.MahasiswaDAO;
-import rbtc.dao.PustakawanDAO;
+import rbtc.dao.UserDAO;
+import rbtc.dao.AdminDAO;
 import rbtc.model.*;
 import java.util.List;
 import javax.validation.Valid;
@@ -32,10 +32,10 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class Control {
 
 	@Autowired
-	private MahasiswaDAO mhsdao;
+	private UserDAO usrdao;
 	
 	@Autowired
-	private PustakawanDAO ptkdao;
+	private AdminDAO admdao;
 	
 	@RequestMapping("/")
 	public String mainPage() {
@@ -51,38 +51,38 @@ public class Control {
 	@RequestMapping("/prosesLogin")
 	public ModelAndView prosesLogin(@Valid @ModelAttribute("model") Login data, BindingResult bindres) {
 		if(bindres.hasErrors()) {
-			ModelAndView mav = new ModelAndView("/RBTCAssistant/login");
+			ModelAndView mav = new ModelAndView("/Avagames/login");
 			return mav;
 		}
 		else {
-			if(data.getRole().equals("Mahasiswa")) {
-					Mahasiswa user = mhsdao.getMhs(data.getId());
+			if(data.getRole().equals("User")) {
+					User user = usrdao.getUsr(data.getId());
 					if(user.getPassword().equals(data.getPassword())) {
-						ModelAndView mav = new ModelAndView("redirect:/mhs/home-mhs");
+						ModelAndView mav = new ModelAndView("redirect:/usr/home-usr");
 						mav.addObject("model", user);
 						return mav;
 					}
 					else {
-						ModelAndView mav = new ModelAndView("/RBTCAssistant/login");
+						ModelAndView mav = new ModelAndView("/Avagames/login");
 						return mav;
 					}
 
 			}
-			else if(data.getRole().equals("Pustakawan")){
-					//get ptk
-					Pustakawan user = ptkdao.getPtk(data.getId());
+			else if(data.getRole().equals("Admin")){
+					//get adm
+					Admin user = admdao.getAdm(data.getId());
 					if(user.getPassword().equals(data.getPassword())) {
-						ModelAndView mav = new ModelAndView("redirect:/ptk/home-ptk");
+						ModelAndView mav = new ModelAndView("redirect:/adm/home-adm");
 						mav.addObject("model", user);
 						return mav;
 					}
 					else {
-						ModelAndView mav = new ModelAndView("/RBTCAssistant/login");
+						ModelAndView mav = new ModelAndView("/Avagames/login");
 						return mav;
 					}
 			}
 			else {
-				ModelAndView mav = new ModelAndView("/RBTCAssistant/login");
+				ModelAndView mav = new ModelAndView("/Avagames/login");
 				return mav;
 			}
 			
@@ -90,23 +90,23 @@ public class Control {
 	}
 	
 	@RequestMapping("/signup")
-	public String signupPageMahasiswa(Model model) {
-		model.addAttribute("model", new Mahasiswa());
+	public String signupPageUser(Model model) {
+		model.addAttribute("model", new User());
 		return "signup-page";
 	}
 	
 	@RequestMapping("logout")
 	public String logout(SessionStatus session, ModelMap model) {
 		session.setComplete();
-		return "redirect:/RBTCAssistant/";
+		return "redirect:/Avagames/";
 	}
 	
-//	@RequestMapping("/profil-mhs")
-//	public String editMahasiswa(@RequestParam("mhsNRP") int nrp, Model theModel) {
+//	@RequestMapping("/profil-usr")
+//	public String editUser(@RequestParam("usrNRP") int nrp, Model theModel) {
 //		
-//		Mahasiswa iniMahasiswa = editMahasiswa.getMahasiswa(nrp);
+//		User iniUser = editUser.getUser(nrp);
 //		
-//		theModel.addAtribute("mahasiswa", iniMahasiswa);
+//		theModel.addAtribute("mahasiswa", iniUser);
 //		
 //		return "data-mahasiswa";
 //	}

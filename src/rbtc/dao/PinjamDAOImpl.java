@@ -10,7 +10,7 @@ import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import rbtc.model.Buku;
+import rbtc.model.Game;
 import rbtc.model.Peminjaman;
 
 @Repository
@@ -29,9 +29,9 @@ public class PinjamDAOImpl implements PinjamDAO {
 	
 	@Transactional
 	@Override
-	public List<Peminjaman> getAllPinjamMhs(String nrp){
+	public List<Peminjaman> getAllPinjamUsr(String ID_user){
 		Session session = s.getCurrentSession();
-		String sql = "from Peminjaman as pj where pj.nrp = '"+nrp+"' and (pj.status_peminjaman = 'Menunggu' or pj.status_peminjaman = 'OK' or pj.status_peminjaman = 'Terlambat')";
+		String sql = "from Peminjaman as pj where pj.ID_user = '"+ID_user+"' and (pj.status_peminjaman = 'Menunggu' or pj.status_peminjaman = 'OK' or pj.status_peminjaman = 'Terlambat')";
 		List<Peminjaman> pinjams = session.createQuery(sql).list();
 		//System.out.println(pinjams);
 		return pinjams;
@@ -64,16 +64,16 @@ public class PinjamDAOImpl implements PinjamDAO {
 	
 	@Transactional
 	@Override
-	public List<Peminjaman> getHistoriMhs(String nrp){
+	public List<Peminjaman> getHistoriUsr(String ID_user){
 		Session session = s.getCurrentSession();
-		String sql= "from Peminjaman as pj where pj.nrp = '"+nrp+"' and (pj.status_peminjaman = 'Selesai' or status_peminjaman = 'Ditolak')";
+		String sql= "from Peminjaman as pj where pj.ID_user = '"+ID_user+"' and (pj.status_peminjaman = 'Selesai' or status_peminjaman = 'Ditolak')";
 		List<Peminjaman> list = session.createQuery(sql).list();
 		return list;
 	}
 	
 	@Transactional
 	@Override
-	public List<Peminjaman> getHistoriPtk(){
+	public List<Peminjaman> getHistoriAdm(){
 		Session session = s.getCurrentSession();
 		String sql = "from Peminjaman as pj where pj.status_peminjaman = 'Selesai' or pj.status_peminjaman = 'Ditolak'";
 		List<Peminjaman> pinjam = session.createQuery(sql).list();

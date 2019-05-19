@@ -7,10 +7,10 @@
 <spring:url value="/resources/css/home.css" var="mainCss" />
 <link href="${mainCss}" rel="stylesheet" />
 <meta charset="ISO-8859-1">
-<title>RBTCAssistant</title>
+<title>Avagames</title>
 </head>
 <body>
-<div class="logo"><h1>RBTCAssistant</h1></div>
+<div class="logo"><h1>Avagames</h1></div>
 	<div class="besar">
 		<div class="header">
 			<img src="http://rbtc.if.its.ac.id/v8/template/default/img/logo.png">

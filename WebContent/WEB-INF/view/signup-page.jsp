@@ -13,15 +13,15 @@
 <body>
 <div class="besar">
 	<div class="header">
-		<div class="logo">RBTCAssistant</div>
+		<div class="logo">Avagames</div>
 	</div>
 	<div class="badan">
 		<div class="form-css">
-			<form:form action="/springmvc-hibernate-maven/mhs/prosesDaftar" method="POST" modelAttribute="model">
+			<form:form action="/springmvc-hibernate-maven/usr/prosesDaftar" method="POST" modelAttribute="model">
 				Nama : <br />
 				<form:input path="nama"/> <br /><br />
-				NRP : <br />
-				<form:input path="nrp" /> <br /><br />
+				Nomor KTP : <br />
+				<form:input path="ID_user" /> <br /><br />
 				Password <br />
 				<form:password path="password" /> <br /><br />
 				Email : <br />

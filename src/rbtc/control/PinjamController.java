@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import rbtc.dao.BukuDAO;
+import rbtc.dao.GameDAO;
 import rbtc.dao.PinjamDAO;
-import rbtc.model.Buku;
-import rbtc.model.Mahasiswa;
+import rbtc.model.Game;
+import rbtc.model.User;
 import rbtc.model.Peminjaman;
 
 @Controller
@@ -27,16 +27,16 @@ public class PinjamController {
 	PinjamDAO dao;
 	
 	@Autowired
-	BukuDAO bukudao;
+	GameDAO gamedao;
 	
 	
 	@RequestMapping(value="prosesPinjam", method=RequestMethod.GET)
-	public String prosesPinjam(@RequestParam("id") String isbn, @RequestParam("nrp") String nrp) {
+	public String prosesPinjam(@RequestParam("id") String ID_Game, @RequestParam("ID_user") String ID_user) {
 		Peminjaman pinjam = new Peminjaman();
-		//ngatur bukunya
-		Buku buku = bukudao.getBuku(isbn);
-		buku.setStatus("Dipinjam");
-		bukudao.editStatus(buku);
+		//ngatur gamenya
+		Game game = gamedao.getGame(ID_Game);
+		game.setStatus("Dipinjam");
+		gamedao.editStatus(game);
 		
 		//ngatur pinjamnya
 		DateFormat d = new SimpleDateFormat("yyyy-MM-dd");
@@ -45,14 +45,14 @@ public class PinjamController {
 		c.setTime(date);
 		c.add(Calendar.DAY_OF_YEAR, 7);
 		
-		pinjam.setJudulbuku(buku.getJudul());
-		pinjam.setIsbn(isbn);
+		pinjam.setJudulgame(game.getJudul());
+		pinjam.setID_Game(ID_Game);
 		pinjam.setStatus_peminjaman("Menunggu");
 		pinjam.setTgl_pinjam(d.format(date));
 		pinjam.setTgl_kembali(d.format(c.getTime()));
 		pinjam.setDenda(0);
-		pinjam.setNrp(nrp);
+		pinjam.setID_user(ID_user);
 		dao.savePinjam(pinjam);
-		return "redirect:/mhs/home-mhs";
+		return "redirect:/usr/home-usr";
 	}
 }
