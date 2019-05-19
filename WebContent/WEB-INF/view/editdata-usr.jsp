@@ -121,7 +121,7 @@ input[type=submit]:hover {
 			<form:form action="editDb" method="POST" modelAttribute="model">
 				Nama : <br />
 				<form:input path="nama"/> <br /><br />
-				NRP : <br />
+				NO KTP : <br />
 				<form:input disabled="true" path="ID_user" /> <br /><br />
 				Password <br />
 				<form:password path="password" /> <br /><br />

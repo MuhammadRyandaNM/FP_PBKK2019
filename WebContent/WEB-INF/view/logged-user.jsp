@@ -92,7 +92,7 @@ li a:hover {
 </head>
 <body>
 <div class=header>
-	<h1>HALO User, ${model.nama }</h1>
+	<h1>Hai, ${model.nama }</h1>
 </div>
 
 <ul>

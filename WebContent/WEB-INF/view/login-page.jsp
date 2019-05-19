@@ -11,12 +11,12 @@
 <title>Login Page</title>
 </head>
 <body>
-<div class="logo"><h1>RBTCAssistant</h1></div>
+<div class="logo"><h1>Avagames</h1></div>
 <div class="besar">
 	<div class="badan">
 		<div class="form-css">
 			<form:form action="prosesLogin" method="POST" modelAttribute="model">
-				NRP/NIP : <br /><br />
+				No. KTP : <br /><br />
 				<form:input path="id" /> <br /><br />
 				Password : <br /><br />
 				<form:password path="password" /> <br /><br />

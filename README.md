@@ -9,35 +9,29 @@ NRP : 05111640000180
 Nama : Dennas H A
 NRP : 05111640000113
 
-Nama : Abdurrahman
-NRP : 05111640000087
 ```
 ## Deskripsi Singkat
-Avagames adalah aplikasi penjualan game berbasis web dengan menggunakan framework spring  
+Avagames adalah aplikasi peminjaman board game berbasis web dengan menggunakan framework spring  
 ## Analisis sistem
 1. User Registration
 2. CRUD
-* User dapat menambahkan game ke keranjang
-* User dapat menghapus game dari keranjang
-* User dapat menambahkan review
+* User dapat menambahkan peminjaman
+* User dapat mengubah profil
 * User dapat melihat detil game
 * User dapat melakukan konfirmasi pembelian
 * Admin dapat menambahkan game ke list game
-* Admin dapat mengubah detail game
 * Admin dapat menghapus game dari list game
-* Admin dapat menambah credits pengguna
+* Admin dapat mengubah status ketersedian game
+* Admin dapat mengubah status peminjaman game
 * TBD
-3. Security
-* Password User dan Admin terinkripsi saat masuk ke database
-* Pertanyaan sekuritas saat ingin mengganti password
+
+3. Proses Peminjaman
+* Melihat list game
+* User Menambahkan barang ke list peminjaman
+* Admin Melakukan konfirmasi Peminjaman
+* Jika user telah mengembalikan barang akan dikonfirmasi oleh admin
 * TBD
-4. Proses Pembelian
-* Melihat detil barang
-* Menambahkan barang ke cart
-* Melakukan konfirmasi pembelian
-* Jika user membatalkan pembelian akan diarahkan ke halaman utama
-* TBD
-5. TBD
+4. TBD
 
 ## Use Case
 ![UC](UseCase.jpeg)

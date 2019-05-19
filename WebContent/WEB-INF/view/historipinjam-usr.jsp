@@ -7,7 +7,7 @@
 <spring:url value="/resources/css/table-usr.css" var="mainCss" />
 <link href="${mainCss}" rel="stylesheet" />
 <meta charset="ISO-8859-1">
-<title>RBTCAssistant</title>
+<title>Avagames</title>
 <style>
 body {
   background-color: white;
@@ -78,23 +78,23 @@ li a:hover {
 </head>
 <body>
 <div class=header>
-	<h1>HALO MAHASISWA, ${model.nama }</h1>
+	<h1>Hai, ${model.nama }</h1>
 </div>
 
 <ul>
 	<li><a href="home-usr">Home</a></li>
-	<li><a href="peminjaman-usr?id=${model.ID_user }">Daftar Peminjaman</a></li>
+	<li><a href="peminjaman-usr?id=${model.ID_user }">Peminjaman</a></li>
 	<li><a href="/springmvc-hibernate-maven/Avagames/logout">Logout</a></li>
 
 </ul>
 
 <div class=content>
-<h2>Histori Peminjaman</h2>
+<h2>Riwayat Peminjaman</h2>
 	<table id="tabel">
 		<tr>
 		    <th>Buku</th>
-		    <th>Tanggal Peminjaman</th> 
-		    <th>Tanggal Pengembalian</th>
+		    <th>Tanggal Mulai</th> 
+		    <th>Tanggal Selesai</th>
 		    <th>Denda</th>
 		    <th>Status Peminjaman</th>
 		    

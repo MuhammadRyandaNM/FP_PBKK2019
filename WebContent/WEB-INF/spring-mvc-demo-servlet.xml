@@ -16,7 +16,7 @@
 
 	<!-- Step 3: Add support for component scanning -->
 	<context:component-scan
-		base-package="rbtc" />
+		base-package="ava" />
 
 	<!-- Step 4: Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven />
@@ -50,7 +50,7 @@
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource" />
 		<property name="packagesToScan"
-			value="rbtc.model" />
+			value="ava.model" />
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>

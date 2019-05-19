@@ -10,10 +10,12 @@
 <title>Avagames</title>
 </head>
 <body>
-<div class="logo"><h1>Avagames</h1></div>
+<div class="logo"><h1> </h1></div>
 	<div class="besar">
 		<div class="header">
-			<img src="http://rbtc.if.its.ac.id/v8/template/default/img/logo.png">
+			<!--  <img src="http://rbtc.if.its.ac.id/v8/template/default/img/logo.png">-->
+			<img style="padding-left: 27.5%;height: 100px;padding-top: 5%;" src="https://i.ibb.co/6WLmSm2/logo.jpg">
+
 		</div>
 		<div class="badan">
 			<a href="login">Login</a>

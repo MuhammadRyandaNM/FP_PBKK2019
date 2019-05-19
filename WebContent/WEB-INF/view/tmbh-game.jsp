@@ -18,13 +18,13 @@
 	<div class="badan">
 		<div class="form-css">
 			<form:form action="insertDb" method="POST" modelAttribute="game">
-				ISBN : <br />
+				ID Game: <br />
 				<form:input path="ID_Game"/> <br /><br />
 				Judul : <br />
 				<form:input path="judul" /> <br /><br />
 				Tahun Terbit : <br />
 				<form:input path="tahun_terbit" /> <br /><br />
-				Pengarang : <br />
+				Developer : <br />
 				<form:input path="developer" /> <br /><br />
 				Edisi : <br />
 				<form:input path="edisi" /> <br /><br />

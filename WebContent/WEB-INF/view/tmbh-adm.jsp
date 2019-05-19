@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Avagames</title>
 </head>
 <body>
-<h1>Tambah Pustakwan</h1>
+<h1>Tambah Admin</h1>
 <a href="/springmvc-hibernate-maven/adm/home-adm">Home</a>
 <a href="/springmvc-hibernate-maven/Avagames/">Logout</a><br /><br />
 <div class="besar">
@@ -20,7 +20,7 @@
 			<form:form action="daftarAdmin" method="POST" modelAttribute="adm">
 				Nama : <br />
 				<form:input path="nama"/> <br /><br />
-				NIP : <br />
+				No.KTP : <br />
 				<form:input path="ID_Admin" /> <br /><br />
 				Password <br />
 				<form:password path="password" /> <br /><br />

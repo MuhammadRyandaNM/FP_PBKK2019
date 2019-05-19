@@ -8,12 +8,12 @@
 <title>Avagames</title>
 </head>
 <body>
-<h1>HALO PUSTAKAWAN, ${model.nama}</h1>
+<h1>Hai, ${model.nama}</h1>
 <a href="/springmvc-hibernate-maven/adm/home-adm">Home</a>
 <a href="/springmvc-hibernate-maven/Avagames/">Logout</a><br /><br />
 
 	<form:form action="prosesPinjam?id=${id }" method="POST" modelAttribute="status">
-		<h4>Ubah Status</h4>
+		<h4>Mengubah Status Peminjaman</h4>
 				Status : <br />
 				<form:select path="message">
 					<form:option value="OK"></form:option>

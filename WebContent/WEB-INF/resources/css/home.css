@@ -1,9 +1,9 @@
 body{
-	background: linear-gradient(to bottom right, #17EAD9, #6078ea);
+	background: linear-gradient(to bottom right, #ea7017, #ea8d60);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: fixed;
-	height: 600px;
+	height: 583px;
 }
 
 .besar{
@@ -30,15 +30,16 @@ img
 }
 
 .logo{
-	font-family : tw cen mt;
+	font-family : arial;
 	text-align : center;
 	font-size : 20px;
 	color: white;
 	text-shadow: 10px 10px 5px #065499;
+	-webkit-text-stroke: 1px #065499;
 }
 
 .badan{
-	font-family : tw cen mt;
+	font-family : arial;
 	margin-top : 80px;
 	padding-top : 80px;
 	padding-left : 69px;
@@ -52,9 +53,10 @@ a:link, a:visited{
 	padding: 14px 25px;
 	background-color : #1A8FCE;
 	color : white;
+	border-radius : 5px;
 }
 
 a:hover{
 	background-color: #0B4564;
-	border-radius : 5px
+	border-radius : 5px;
 }

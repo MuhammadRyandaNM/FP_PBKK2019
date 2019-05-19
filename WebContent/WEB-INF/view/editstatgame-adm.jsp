@@ -10,7 +10,7 @@
 <body>
 <a href="/springmvc-hibernate-maven/adm/home-adm">Home</a>
 <a href="/springmvc-hibernate-maven/Avagames/">Logout</a><br /><br />
-<h1>UBAH STATUS BUKU</h1>
+<h1>Ubah Detail Game</h1>
 	<form:form action="ubahStat" method="POST" modelAttribute="statusnya">
 	<h4>Data Buku</h4>
 				ISBN : <br />

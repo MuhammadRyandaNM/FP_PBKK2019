@@ -20,7 +20,7 @@
 			<form:form action="/springmvc-hibernate-maven/usr/prosesDaftar" method="POST" modelAttribute="model">
 				Nama : <br />
 				<form:input path="nama"/> <br /><br />
-				Nomor KTP : <br />
+				No. KTP : <br />
 				<form:input path="ID_user" /> <br /><br />
 				Password <br />
 				<form:password path="password" /> <br /><br />
