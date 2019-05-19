@@ -1,0 +1,59 @@
+body{
+	background: linear-gradient(to bottom right, #17EAD9, #6078ea);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: fixed;
+	height: 600px;
+}
+
+.besar{
+	width : 450px;
+	height : 300px;
+	margin : auto;
+	background-color : white;
+	border-radius : 10px;
+	box-shadow: 10px 10px 5px #065499;
+	align-content: center;
+}
+
+.logo{
+	font-family : tw cen mt;
+	text-align : center;
+	font-size : 20px;
+	color: white;
+	text-shadow: 10px 10px 5px #065499;
+}
+
+form:password{
+	background-color: black;
+}
+
+.badan{
+	font-family : tw cen mt;
+	font-size : 16px;
+	margin-top : 20px;
+	padding-top : 20px;
+	padding-left : 80px;
+}
+
+form[path=id]{
+	background-color: black;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	align-items : center; 
+	text-decoration: none;
+	font-family : tw cen mt;
+	font-size : 16px;
+	border : none;
+	margin-left : 40px;
+	padding: 10px 20px;
+	background-color : #1A8FCE;
+	color : white;
+}
+
+input[type=submit]:hover {
+	background-color: #0B4564;
+	border-radius : 5px
+}
+
