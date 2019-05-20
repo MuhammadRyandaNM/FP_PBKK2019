@@ -34,7 +34,7 @@ Avagames adalah aplikasi peminjaman board game berbasis web dengan menggunakan f
 4. TBD
 
 ## Use Case
-![UC](UseCase.jpeg)
+![UC](UseCase.jpg)
 
 ## Sitemap
 ![SiteMap](SiteMap.png)
