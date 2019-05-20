@@ -21,10 +21,10 @@
 				<form:input path="id" /> <br /><br />
 				Password : <br /><br />
 				<form:password path="password" /> <br /><br />
-				Role : <br /><br />
+				Login Sebagai : <br /><br />
 				<form:radiobutton path="role" value="User" />User
 				<form:radiobutton path="role" value="Admin" />Admin<br /><br />
-				<input type="submit" value="Submit">
+				<input style="margin-left: 55%;"  type="submit" value="Submit">
 			</form:form>
 		</div>
 	</div>

@@ -18,7 +18,6 @@ Avagames adalah aplikasi peminjaman board game berbasis web dengan menggunakan f
 * User dapat menambahkan peminjaman
 * User dapat mengubah profil
 * User dapat melihat detil game
-* User dapat melakukan konfirmasi pembelian
 * Admin dapat menambahkan game ke list game
 * Admin dapat menghapus game dari list game
 * Admin dapat mengubah status ketersedian game
@@ -30,8 +29,7 @@ Avagames adalah aplikasi peminjaman board game berbasis web dengan menggunakan f
 * User Menambahkan barang ke list peminjaman
 * Admin Melakukan konfirmasi Peminjaman
 * Jika user telah mengembalikan barang akan dikonfirmasi oleh admin
-* TBD
-4. TBD
+
 
 ## Use Case
 ![UC](UseCase.jpg)
