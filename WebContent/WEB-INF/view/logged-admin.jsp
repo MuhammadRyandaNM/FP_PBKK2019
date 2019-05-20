@@ -19,7 +19,7 @@
 <h1>Hai, ${model.nama}</h1>
 <ul>
 <li><a href="home-adm">Home</a></li>
-<li><a href="editAdm">Ubah Data</a></li>
+<li><a href="editAdm">Edit Profile</a></li>
 <li><a href="tambah-adm">Tambah Admin</a></li>
 <li><a href="/springmvc-hibernate-maven/game/tambahGame">Tambah Game</a></li>
 <li><a href="daftarusr-adm">Daftar User</a></li>
@@ -38,7 +38,8 @@
 	    <th>Edisi</th>
 	    <th>Link Deskripsi</th>
 	    <th>Status</th>
-	    <th>Action</th>
+	    <th>Hapus Game</th>
+	    <th>Ubah Status</th>
  	 </tr>
  </thead>
  	 <c:forEach var="value" items="${game }"> 
@@ -49,8 +50,8 @@
 		    <th>${value.edisi }</th>
 		    <td><a style="margin-left:25%" href="${value.linkdeskripsi }">link</a></td>
 		    <th>${value.status }</th>
-		    <th><a href="/springmvc-hibernate-maven/game/deleteGame?id=${value.ID_Game }">Hapus</a>
-		    <a href="/springmvc-hibernate-maven/game/editStatus?id=${value.ID_Game}">Ubah</a></th>
+		    <th><a href="/springmvc-hibernate-maven/game/deleteGame?id=${value.ID_Game }">Hapus</a></th>
+		    <th><a href="/springmvc-hibernate-maven/game/editStatus?id=${value.ID_Game}">Ubah</a></th>
 	 	 </tr>
 	 </c:forEach>
 </table>

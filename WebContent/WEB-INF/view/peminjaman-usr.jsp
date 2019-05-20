@@ -90,7 +90,7 @@ li a:hover {
 </ul>
 
 <div class=content>
-<h2>Peminjaman</h2>
+<h2>List Peminjaman</h2>
 
 <table id= "tabel">
 	<tr>

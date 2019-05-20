@@ -1,6 +1,6 @@
 # FP - PBKK A 2019
 ## Avagames
-
+![Logo](logo.jpg)
 ## Anggota Kelompok
 ```
 Nama : Muhammad Ryanda Nugraha M
@@ -11,30 +11,29 @@ NRP : 05111640000113
 
 ```
 ## Deskripsi Singkat
-Avagames adalah aplikasi peminjaman board game berbasis web dengan menggunakan framework spring  
+Avaboard games adalah aplikasi peminjaman board board game berbasis web dengan menggunakan framework spring  
 ## Analisis sistem
 1. User Registration
 2. CRUD
 * User dapat menambahkan peminjaman
 * User dapat mengubah profil
-* User dapat melihat detil game
-* User dapat melakukan konfirmasi pembelian
-* Admin dapat menambahkan game ke list game
-* Admin dapat menghapus game dari list game
-* Admin dapat mengubah status ketersedian game
-* Admin dapat mengubah status peminjaman game
+* User dapat melihat detil board game
+* Admin dapat menambahkan board game ke list board game
+* Admin dapat menghapus board game dari list board game
+* Admin dapat menghapus user dari list user
+* Admin dapat mengubah status ketersedian board game
+* Admin dapat mengubah status peminjaman board game
 * TBD
 
 3. Proses Peminjaman
-* Melihat list game
-* User Menambahkan barang ke list peminjaman
+* Melihat list board game
+* User Menambahkan board game ke list peminjaman
 * Admin Melakukan konfirmasi Peminjaman
-* Jika user telah mengembalikan barang akan dikonfirmasi oleh admin
-* TBD
-4. TBD
+* Jika user telah mengembalikan board game akan dikonfirmasi oleh admin
+
 
 ## Use Case
-![UC](UseCase.jpeg)
+![UC](UseCase.png)
 
 ## Sitemap
 ![SiteMap](SiteMap.png)
@@ -44,11 +43,11 @@ Avagames adalah aplikasi peminjaman board game berbasis web dengan menggunakan f
 ![Login](Login.PNG)
 ### ListGame
 ![ListGame](ListGame.PNG)
-### DetailGame
+### DaftarPeminjaman
 ![DetailGame](DetailGame.PNG)
 
-## Database Design
-![Database](AvagamesPDM.png)
+<!-- ## Database Design
+![Database](Avaboard gamesPDM.png) -->
 
 
 

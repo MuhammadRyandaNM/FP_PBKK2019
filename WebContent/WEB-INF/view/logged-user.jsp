@@ -96,13 +96,13 @@ li a:hover {
 </div>
 
 <ul>
-	<li><a href="editUsr">Ubah Data</a></li>
-	<li><a href="peminjaman-usr?id=${model.ID_user }">Peminjaman</a></li>
+	<li><a href="editUsr">Edit Profile</a></li>
+	<li><a href="peminjaman-usr?id=${model.ID_user }">List Peminjaman</a></li>
 	<li><a href="/springmvc-hibernate-maven/Avagames/logout">Logout</a></li>
 </ul>
 
 <div class=content>
-<h2>Daftar Buku</h2>
+<h2>Daftar Game</h2>
 
 <table id = "tabel">
 	<tr>
