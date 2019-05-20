@@ -33,7 +33,7 @@ Avaboard games adalah aplikasi peminjaman board board game berbasis web dengan m
 
 
 ## Use Case
-![UC](UseCase.jpg)
+![UC](UseCase.png)
 
 ## Sitemap
 ![SiteMap](SiteMap.png)
