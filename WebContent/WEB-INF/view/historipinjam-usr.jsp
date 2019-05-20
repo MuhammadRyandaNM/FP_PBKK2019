@@ -83,7 +83,7 @@ li a:hover {
 
 <ul>
 	<li><a href="home-usr">Home</a></li>
-	<li><a href="peminjaman-usr?id=${model.ID_user }">Peminjaman</a></li>
+	<li><a href="peminjaman-usr?id=${model.ID_user }">List Peminjaman</a></li>
 	<li><a href="/springmvc-hibernate-maven/Avagames/logout">Logout</a></li>
 
 </ul>
