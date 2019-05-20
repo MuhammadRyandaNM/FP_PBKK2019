@@ -102,7 +102,7 @@ li a:hover {
 </ul>
 
 <div class=content>
-<h2>Daftar Buku</h2>
+<h2>Daftar Game</h2>
 
 <table id = "tabel">
 	<tr>
