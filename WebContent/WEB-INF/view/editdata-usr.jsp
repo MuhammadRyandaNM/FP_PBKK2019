@@ -42,58 +42,62 @@ li a:hover {
   background-color: #04275e;
 }
 
+.active {
+  background-color: red;
+}
+
+.active:hover{
+	background-color: #cc0000;
+}
+
 .besar{
-	width : 450px;
+	width : 40%;
 	height : 500px;
 	margin : auto;
-	background-color : #52b4f2;
-	border-radius : 10px;
-	box-shadow: 10px 10px 5px #065499;
 	align-content: center;
 }
 
-.logo{
-	font-family : tw cen mt;
-	text-align : center;
-	font-size : 20px;
-	color: #063684;
-	text-shadow: 10px 10px 5px #065499;
-	padding-top: 8px;
-}
-
-form:password{
-	background-color: black;
-}
-
 .badan{
-	font-family : tw cen mt;
+	background-color : #61b9d9;
+	font-family : arial;
 	font-size : 16px;
-	margin-top : 20px;
-	margin-bottom:100px;
-	padding-top : 20px;
-	padding-left : 120px;
-}
-
-form[path=id]{
-	background-color: black;
+	padding-left : 20%;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-	align-items : center; 
+	align-content : center; 
 	text-decoration: none;
-	font-family : tw cen mt;
+	font-family : arial;
 	font-size : 16px;
 	border : none;
-	margin-left : 60px;
 	padding: 10px 20px;
 	background-color : #1A8FCE;
 	color : white;
+	border-radius : 5px;
+	margin-bottom: 10px;
 }
 
 input[type=submit]:hover {
 	background-color: #0B4564;
-	border-radius : 5px
+	border-radius : 5px;
 }
+
+input[type=text] {
+  width: 80%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=password]{
+  width: 80%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
 </style>
 </head>
 
@@ -111,12 +115,8 @@ input[type=submit]:hover {
 
 <br></br>
 <div class="besar">
-	<div class="header">
-		<div class="logo">
-			<h3>Avagames</h3>
-		</div>
-	</div>
-	<div class="badan">
+	
+	<div class="badan" style="padding-top:5%">
 		<div class="form-css">
 			<form:form action="editDb" method="POST" modelAttribute="model">
 				Nama : <br />
@@ -129,7 +129,7 @@ input[type=submit]:hover {
 				<form:input path="email" /> <br /><br />
 				No. HP : <br />
 				<form:input path="nohp" /> <br /><br /><br /><br />
-				<input type="submit" value="Submit">
+				<input style="margin-left: 50%;" type="submit" value="Submit">
 			</form:form>
 		</div>
 	</div>
