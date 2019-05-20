@@ -26,7 +26,8 @@
 <li><a href="daftarusr-adm">Daftar User</a></li>
 <!-- <li><a href="lihatpeminjaman">Daftar Peminjaman</a></li>-->
 <li><a href="lihatpeminjaman">Daftar Peminjaman</a></li>
-<li><a href="/springmvc-hibernate-maven/Avagames/logout">Logout</a></li>
+<li style="float:right"><a class="aclive" href="/springmvc-hibernate-maven/Avagames/logout">Logout</a></li>
+
 
 </ul>
 <h1>Daftar User</h1>

@@ -26,10 +26,7 @@
 
 
 <div class="besar">
-	<div class="header">
-		<div class="logo">Avagames</div>
-	</div>
-	<div class="badan">
+	<div class="badan" style="padding-top:5%">
 		<div class="form-css">
 			<form:form action="editDb" method="POST" modelAttribute="model">
 				Nama : <br />
@@ -42,7 +39,7 @@
 				<form:input path="email" /> <br /><br />
 				No. HP : <br />
 				<form:input path="nohp" /> <br /><br />
-				<input type="submit" value="Submit">
+				<input style="margin-left: 50%;" type="submit" value="Submit">
 			</form:form>
 		</div>
 	</div>

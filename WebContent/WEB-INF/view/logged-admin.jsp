@@ -18,6 +18,7 @@
 <body>
 <h1>Hai, ${model.nama}</h1>
 <ul>
+<li><a href="home-adm">Home</a></li>
 <li><a href="editAdm">Ubah Data</a></li>
 <li><a href="tambah-adm">Tambah Admin</a></li>
 <li><a href="/springmvc-hibernate-maven/game/tambahGame">Tambah Game</a></li>

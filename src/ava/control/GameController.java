@@ -1,5 +1,7 @@
 package ava.control;
 
+import java.util.List;
+
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,7 +32,12 @@ public class GameController {
 		book.addAttribute("game", new Game());
 		return "tmbh-game";
 	}
-	
+	@RequestMapping("/home-adm")
+	public ModelAndView halamanAdmin() {
+		ModelAndView mav = new ModelAndView("redirect:/adm/home-adm");
+		
+		return mav;
+	}
 	@RequestMapping("/insertDb")
 	public ModelAndView daftarBaruGame(@Valid @ModelAttribute("game") Game game, BindingResult bindres) {
 		if(bindres.hasErrors()) {
