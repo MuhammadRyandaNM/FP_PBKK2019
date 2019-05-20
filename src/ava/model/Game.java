@@ -24,6 +24,9 @@ public class Game {
 	@Column(name="edisi")
 	private String edisi;
 	
+	@Column(name="linkdeskripsi")
+	private String linkdeskripsi;
+
 	@Column(name="status")
 	private String status;
 	
@@ -51,6 +54,12 @@ public class Game {
 	public void setTahun_terbit(String tahun_terbit) {
 		this.tahun_terbit = tahun_terbit;
 	}
+	public String getLinkdeskripsi() {
+		return linkdeskripsi;
+	}
+	public void setLinkdeskripsi(String linkdeskripsi) {
+		this.linkdeskripsi = linkdeskripsi;
+	}
 	public String getEdisi() {
 		return edisi;
 	}
@@ -63,13 +72,14 @@ public class Game {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Game(String ID_Game, String judul, String developer, String tahun_terbit, String edisi, String status) {
+	public Game(String ID_Game, String judul, String developer, String tahun_terbit, String edisi,String linkdeskripsi, String status) {
 		super();
 		this.ID_Game = ID_Game;
 		this.judul = judul;
 		this.developer = developer;
 		this.tahun_terbit = tahun_terbit;
 		this.edisi = edisi;
+		this.linkdeskripsi=linkdeskripsi;
 		this.status = status;
 	}
 	
@@ -78,7 +88,7 @@ public class Game {
 	@Override
 	public String toString() {
 		return "Buku [ID_Game=" + ID_Game + ", judul=" + judul + ", developer=" + developer + ", tahun_terbit=" + tahun_terbit
-				+ ", edisi=" + edisi + ", status=" + status + "]";
+				+ ", edisi=" + edisi +", linkdeskripsi="+linkdeskripsi+ ", status=" + status + "]";
 	}
 	
 }

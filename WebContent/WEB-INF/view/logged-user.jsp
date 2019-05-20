@@ -110,6 +110,7 @@ li a:hover {
 	    <th>Developer</th> 
 	    <th>Tahun Terbit</th>
 	    <th>Edisi</th>
+	    <th>Link Deskripsi</th>
 	    <th>Status</th>
 	    <th>Action</th>
  	 </tr>
@@ -119,10 +120,11 @@ li a:hover {
 		    <td>${value.developer }</td>
 		    <td>${value.tahun_terbit }</td> 
 		    <td>${value.edisi }</td>
+		    <td><a style="margin-left:25%" href="${value.linkdeskripsi }">link</a></td>
 		    <td>${value.status }</td>
 		    <td>
 		    <c:if test = "${value.status == 'Tersedia' }">
-		    	<a href="/springmvc-hibernate-maven/pinjam/prosesPinjam?id=${value.ID_Game }&ID_user=${model.ID_user}">Pinjam</a>
+		    	<a style="margin-left:25%" href="/springmvc-hibernate-maven/pinjam/prosesPinjam?id=${value.ID_Game }&ID_user=${model.ID_user}">Pinjam</a>
 		    </c:if>
 		    <c:if test = "${value.status == 'Dipinjam' }">
 		    	<p>Tidak bisa dipinjam</p>

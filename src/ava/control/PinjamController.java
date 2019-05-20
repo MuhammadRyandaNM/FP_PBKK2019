@@ -33,12 +33,11 @@ public class PinjamController {
 	@RequestMapping(value="prosesPinjam", method=RequestMethod.GET)
 	public String prosesPinjam(@RequestParam("id") String ID_Game, @RequestParam("ID_user") String ID_user) {
 		Peminjaman pinjam = new Peminjaman();
-		//ngatur gamenya
+
 		Game game = gamedao.getGame(ID_Game);
 		game.setStatus("Dipinjam");
 		gamedao.editStatus(game);
 		
-		//ngatur pinjamnya
 		DateFormat d = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		Calendar c = Calendar.getInstance();

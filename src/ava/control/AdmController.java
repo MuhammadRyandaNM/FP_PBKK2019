@@ -117,7 +117,7 @@ public class AdmController {
 			Duration diff = Duration.between(finish.atStartOfDay(), start.atStartOfDay());
 			long telat = diff.toDays();
 			if(telat > 0) {
-				long denda = telat*1000;
+				long denda = telat*10000;
 				item.setDenda(denda);
 				item.setStatus_peminjaman("Terlambat");
 				pinjamdao.updatePinjam(item);

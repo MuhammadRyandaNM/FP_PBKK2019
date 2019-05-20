@@ -36,6 +36,8 @@
 				<form:input path="developer" /> <br /><br />
 				Edisi : <br />
 				<form:input path="edisi" /> <br /><br />
+				Link Deskripsi : <br />
+				<form:input path="linkdeskripsi" /> <br /><br />
 				Status : <br />
 				<form:select path="status">
 					<form:option value="Tersedia"></form:option>

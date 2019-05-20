@@ -32,7 +32,7 @@
 				Nama : <br />
 				<form:input path="nama"/> <br /><br />
 				No KTP : <br />
-				<form:input disabled="true" path="ID_Admin" /> <br /><br />
+				<form:input readonly="true" path="ID_Admin" /> <br /><br />
 				Password <br />
 				<form:password path="password" /> <br /><br />
 				Email : <br />

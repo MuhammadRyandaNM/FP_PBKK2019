@@ -36,6 +36,7 @@
 	    <th>Developer</th> 
 	    <th>Tahun Terbit</th>
 	    <th>Edisi</th>
+	    <th>Link Deskripsi</th>
 	    <th>Status</th>
 	    <th>Action</th>
  	 </tr>
@@ -46,6 +47,7 @@
 		    <th>${value.developer }</th>
 		    <th>${value.tahun_terbit }</th> 
 		    <th>${value.edisi }</th>
+		    <td><a style="margin-left:25%" href="${value.linkdeskripsi }">link</a></td>
 		    <th>${value.status }</th>
 		    <th><a href="/springmvc-hibernate-maven/game/deleteGame?id=${value.ID_Game }">Hapus</a>
 		    <a href="/springmvc-hibernate-maven/game/editStatus?id=${value.ID_Game}">Ubah</a></th>
