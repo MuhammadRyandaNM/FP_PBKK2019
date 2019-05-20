@@ -42,7 +42,7 @@ Avagames adalah aplikasi peminjaman board game berbasis web dengan menggunakan f
 ![Login](Login.PNG)
 ### ListGame
 ![ListGame](ListGame.PNG)
-### DetailGame
+### DaftarPeminjaman
 ![DetailGame](DetailGame.PNG)
 
 ## Database Design
